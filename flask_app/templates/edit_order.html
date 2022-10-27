@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update Order</h1>
+    <h1>Edit order for: {{order.name}}</h1>
+    <form action="/edit/{{order.id}}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="{{order.name}}">
+        <br>
+        <label for="cookie_type">Cookie type:</label>
+        <input type="text" name="cookie_type" value="{{order.cookie_type}}">
+        <br>
+        <label for="number_of_orders">Number of orders:</label>
+        <input type="text" name="number_of_orders" value="{{order.number_of_orders}}">
+        <br>
+        <button>Edit Order</button>
+    </form>
+</body>
+</body>
+</html>
